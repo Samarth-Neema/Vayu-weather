@@ -171,7 +171,7 @@ function HourlyChart({ hourlyTime, hourlyTemp, selectedDate, unit }) {
 
 // ── CSS styles written as a JS string (so we can keep everything in 1 file) ──
 const styles = `
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Syne', sans-serif; background: #0a0a0f; color: #e8e4dc; min-height: 100vh; }
 
@@ -307,7 +307,7 @@ export default function WeatherApp() {
 
           {/* Logo + °C/°F toggle */}
           <div className="top-row">
-            <span className="logo">VAYU<span className="logo-dot">.</span></span>
+            <span className="logo">ATMOS<span className="logo-dot">.</span></span>
             <div className="unit-toggle">
               <button className={`unit-btn ${unit === "C" ? "active" : ""}`} onClick={() => setUnit("C")}>°C</button>
               <button className={`unit-btn ${unit === "F" ? "active" : ""}`} onClick={() => setUnit("F")}>°F</button>
