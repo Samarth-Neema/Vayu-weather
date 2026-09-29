@@ -307,7 +307,7 @@ export default function WeatherApp() {
 
           {/* Logo + °C/°F toggle */}
           <div className="top-row">
-            <span className="logo"><Vayu></Vayu><span className="logo-dot">.</span></span>
+            <span className="logo">Vayu<span className="logo-dot">.</span></span>
             <div className="unit-toggle">
               <button className={`unit-btn ${unit === "C" ? "active" : ""}`} onClick={() => setUnit("C")}>°C</button>
               <button className={`unit-btn ${unit === "F" ? "active" : ""}`} onClick={() => setUnit("F")}>°F</button>
